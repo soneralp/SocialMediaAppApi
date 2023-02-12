@@ -14,7 +14,7 @@
   <li>To run the API, run the command <code>php artisan serve</code> from the command line.</li>
 </ol>
 
-<h2>Usage</h2>
+<!-- <h2>Usage</h2>
 
 <p>The API is designed in a RESTful structure for managing user accounts and reading data. The following endpoints are available:</p>
 
@@ -24,7 +24,7 @@
   <li><code>POST /api/users</code>: Creates a new user account.</li>
   <li><code>PUT /api/users/{id}</code>: Updates data of the user with the specified <code>id</code>.</li>
   <li><code>DELETE /api/users/{id}</code>: Deletes the user account with the specified <code>id</code>.</li>
-</ul>
+</ul> -->
 
 <h2>Notice</h2>
 
