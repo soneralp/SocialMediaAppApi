@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Spatie\FlareClient\Api;
-
+use App\Http\Middleware\JWTMiddleware;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -21,4 +21,12 @@ Route::post('register',[App\Http\Controllers\Api\AuthController::class, 'registe
 Route::get('logout',[App\Http\Controllers\Api\AuthController::class, 'logout']);
 
 
+// Post
+//update this route group !!
+Route::middleware('jwtAuth')->group(function () {
+    Route::get('posts',[App\Http\Controllers\Api\PostsController::class, 'posts' ]);
+    Route::post('posts/create',[App\Http\Controllers\Api\PostsController::class, 'create' ]);
+    Route::post('posts/delete',[App\Http\Controllers\Api\PostsController::class, 'delete' ]);
+    Route::post('posts/update',[App\Http\Controllers\Api\PostsController::class, 'update' ]);    
+});
 
