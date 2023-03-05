@@ -28,5 +28,15 @@ Route::middleware('jwtAuth')->group(function () {
     Route::post('posts/create',[App\Http\Controllers\Api\PostsController::class, 'create' ]);
     Route::post('posts/delete',[App\Http\Controllers\Api\PostsController::class, 'delete' ]);
     Route::post('posts/update',[App\Http\Controllers\Api\PostsController::class, 'update' ]);    
-});
 
+
+
+    //Comments
+    Route::post('posts/comments',[App\Http\Controllers\Api\CommentsController::class, 'posts' ]);
+    Route::post('comments/create',[App\Http\Controllers\Api\CommentsController::class, 'create' ]);
+    Route::post('comments/delete',[App\Http\Controllers\Api\CommentsController::class, 'delete' ]);
+    Route::post('comments/update',[App\Http\Controllers\Api\CommentsController::class, 'update' ]);    
+
+    //Likes
+    Route::post('posts/like',[App\Http\Controllers\Api\LikesController::class, 'like' ]);
+});
