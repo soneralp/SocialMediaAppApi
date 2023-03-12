@@ -14,13 +14,9 @@
   <li>To run the API, run the command <code>php artisan serve</code> from the command line.</li>
 </ol>
 
-<h2>Usage</h2>
-
-<p>The API is designed in a RESTful structure for managing user accounts and reading data. The following endpoints are available:</p>
-
 <h1>API Documentation</h1>
 
-<p>This API provides the following endpoints:</p>
+<p>The API is designed in a RESTful structure for managing user accounts and reading data. The following endpoints are available:</p>
 
 <h2>Authentication</h2>
 
